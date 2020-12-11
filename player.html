@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player to player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <h1>Сейчас ходит <span>1</span> игрок</h1>
+      <div class="player__inner">
+        <div class="player-mode">
+          <div class="player-mode__player">
+            <h2
+              class="player-mode__counter"
+              id="counter-first"
+              style="text-align: left"
+            >
+              <span>0</span> очков
+              <p class="last-bones" style="font-size: 0.5em">
+                Последняя ставка <span>0</span>
+              </p>
+            </h2>
+            <img
+              id="images-first"
+              class="player-mode__images"
+              src="./images/first-pl.svg"
+              alt=""
+              data-redirect="first-player"
+            />
+          </div>
+
+          <div class="player__bones bones-anim">
+            <img src="./images/cursor.svg" alt="bones" />
+          </div>
+
+          <div class="player-mode__player">
+            <h2
+              class="player-mode__counter"
+              id="counter-second"
+              style="text-align: left"
+            >
+              <span>0</span> очков
+              <p class="last-bones" style="font-size: 0.5em">
+                Последняя ставка <span>0</span>
+              </p>
+            </h2>
+            <img
+              id="images-second"
+              class="player-mode__images"
+              src="./images/second-pl.svg"
+              alt=""
+              data-redirect="second-player"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
